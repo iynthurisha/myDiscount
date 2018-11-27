@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button icon-only (click)="onToggleMenu()">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>
+      Favorites
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-img src="../../assets/imgs/myDiscountlogo.png" alt="myDiscount"></ion-img>
+  <p>
+
+    Vous retrouvez ici les codes promos que vous avez ajouté au <b>favorite !</b>
+  </p>
+
+
+  <ion-card *ngFor="let line of listpromo">
+
+    <br>
+    <ion-img src="{{ line.image }}"></ion-img>
+    <br>
+    {{ line.description }}
+
+    <ion-grid>
+      <ion-row>
+        <ion-col col-7>
+          <button ion-button icon-start full color="light" (click)="onShowCodes(line,magasin)">
+            <ion-icon name="barcode"></ion-icon> Voir le code 
+          </button>
+
+        </ion-col>
+        <ion-col col-5>
+          <button ion-button icon-start full [color]="line.isOnFav ? 'dark' : 'light'" (click)="presentToast(line)">
+            <ion-icon [name]="line.isOnFav ? 'trash' : 'star'"></ion-icon>
+          </button>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+
+</ion-content>

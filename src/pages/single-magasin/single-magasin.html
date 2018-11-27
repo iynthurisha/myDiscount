@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons end>
+      <button ion-button (click)="dismissModal()">Fermer</button>
+    </ion-buttons>
+    <ion-title>{{ magasin.name }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-img src="{{ magasin.logo }}" alt="myDiscount"></ion-img>
+
+
+  <ion-card *ngFor="let line of code.promotions; let i = index"> {{ magasin.name }}
+    <br>
+    <ion-img src="{{ line.image }}"></ion-img>
+    <br>
+    {{ line.description }}
+
+    <ion-grid>
+      <ion-row>
+        <ion-col col-7>
+          <button ion-button icon-start full color="light" (click)="onShowCodes(line,magasin)">
+            <ion-icon name="barcode"></ion-icon>Voir le code
+          </button>
+        </ion-col>
+        <ion-col col-5>
+          <button ion-button icon-start full [color]="line.isOnFav ? 'dark' : 'light'" (click)="onAddFav(line)">
+            <ion-icon name="star"></ion-icon>Favorite
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+  <!--
+  <ion-card>
+    <ion-card-header>Données</ion-card-header>
+    <ion-card-content>
+      <button ion-button block outline (click)="onSaveListC()">Enregistrer</button>
+      <button ion-button block outline (click)="onFetchListC()">Récupérer</button>
+    </ion-card-content>
+  </ion-card>
+
+-->
