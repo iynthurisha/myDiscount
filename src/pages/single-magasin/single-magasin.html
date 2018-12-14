@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-buttons end>
-      <button ion-button (click)="dismissModal()">Fermer</button>
+      <button ion-button (click)="dismissModal()" color="teal">Fermer</button>
     </ion-buttons>
     <ion-title>{{ magasin.name }}</ion-title>
   </ion-navbar>
@@ -9,38 +9,29 @@
 
 
 <ion-content padding>
-  <ion-img src="{{ magasin.logo }}" alt="myDiscount"></ion-img>
-
+  <div text-center>
+    <ion-img width="60" height="60" src="{{ magasin.logo }}" alt="myDiscount"></ion-img>
+  </div>
 
   <ion-card *ngFor="let line of code.promotions; let i = index"> {{ magasin.name }}
     <br>
-    <ion-img src="{{ line.image }}"></ion-img>
-    <br>
-    {{ line.description }}
-
+    <div text-center>
+      <ion-img width="60" height="60" src="{{ line.image }}"></ion-img>
+      <br>
+      {{ line.description }}
+    </div>
     <ion-grid>
       <ion-row>
         <ion-col col-7>
           <button ion-button icon-start full color="light" (click)="onShowCodes(line,magasin)">
-            <ion-icon name="barcode"></ion-icon>Voir le code
+            <ion-icon name="barcode" color="teal"></ion-icon>Voir le code
           </button>
         </ion-col>
         <ion-col col-5>
           <button ion-button icon-start full [color]="line.isOnFav ? 'dark' : 'light'" (click)="onAddFav(line)">
-            <ion-icon name="star"></ion-icon>Favorite
+            <ion-icon name="star" [color]="line.isOnFav ? 'light' : 'teal'" ></ion-icon>Favoris
           </button>
         </ion-col>
       </ion-row>
     </ion-grid>
   </ion-card>
-
-  <!--
-  <ion-card>
-    <ion-card-header>Données</ion-card-header>
-    <ion-card-content>
-      <button ion-button block outline (click)="onSaveListC()">Enregistrer</button>
-      <button ion-button block outline (click)="onFetchListC()">Récupérer</button>
-    </ion-card-content>
-  </ion-card>
-
--->

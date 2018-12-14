@@ -1,6 +1,6 @@
 <ion-menu [content]="content">
-    <ion-header>
-        <ion-toolbar>
+    <ion-header >
+        <ion-toolbar color="teal">
             <ion-title>Menu</ion-title>
         </ion-toolbar>
     </ion-header>
@@ -8,33 +8,41 @@
     <ion-content>
         <ion-list>
             <button ion-item icon-start (click)="onNavigate(magasinsPage)" *ngIf="isAuth">
-                <ion-icon name="cart"></ion-icon>
+                <ion-icon name="cart" color="teal"></ion-icon>
                 Magasins
             </button>
-            <button ion-item icon-start (click)="onNavigate(homePage)" *ngIf="isAuth">
-                <ion-icon name="home"></ion-icon>
+            <button ion-item icon-start (click)="onNavigate(homePage)" *ngIf="isAuth" >
+                <ion-icon name="home" color="teal"></ion-icon>
                 Home
             </button>
             <button ion-item icon-start (click)="onNavigate(favoritesPage)" *ngIf="isAuth">
-                <ion-icon name="star"></ion-icon>
-                Favorites
+                <ion-icon name="star" color="teal"></ion-icon>
+                Favoris
             </button>
 
             <button ion-button icon-start (click)="onNavigate(authPage, {mode:'new'})" *ngIf="!isAuth">
                 <ion-icon name="person-add"></ion-icon>
-                Nouvel utiisateur
+                Nouvel utilisateur
             </button>
             <button ion-button icon-start (click)="onNavigate(authPage, {mode:'connect'})" *ngIf="!isAuth">
                 <ion-icon name="person"></ion-icon>
                 Connexion
             </button>
-            <button ion-button icon-start (click)="onDisconnect()" *ngIf="isAuth">
+            <button ion-button icon-start (click)="onDisconnect()" *ngIf="isAuth" color="teal">
                 <ion-icon name="exit"></ion-icon>
                 Déconnexion
             </button>
 
         </ion-list>
     </ion-content>
+
+    
+<ion-footer>
+        <ion-toolbar>
+          L'application <i> myDiscount </i> est developpée par <b>Iynthurisha </b> & <b>Jordan</b>.
+        </ion-toolbar>
+      </ion-footer>
+
 </ion-menu>
 
 <ion-nav [root]="homePage" #content></ion-nav>

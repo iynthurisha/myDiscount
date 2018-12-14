@@ -103,11 +103,4 @@ export class SingleMagasinPage implements OnInit {
     );
 
   }
-
-  /*
-   ngOnDestroy() {
-     this.codesSubscription.unsubscribe();
-   }
-   */
-
 }
