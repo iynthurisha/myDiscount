@@ -10,10 +10,10 @@
 
 <ion-content padding>
   <div text-center>
-    <ion-img width="60" height="60" src="{{ magasin.logo }}" alt="myDiscount"></ion-img>
+    <ion-img width="90" height="90" src="{{ magasin.logo }}" alt="myDiscount"></ion-img>
   </div>
 
-  <ion-card *ngFor="let line of code.promotions; let i = index"> {{ magasin.name }}
+  <ion-card *ngFor="let line of code.promotions; let i = index">
     <br>
     <div text-center>
       <ion-img width="60" height="60" src="{{ line.image }}"></ion-img>
