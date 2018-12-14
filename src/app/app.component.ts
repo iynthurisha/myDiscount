@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { MagasinsPage } from '../pages/magasins/magasins';
 import { FavoritesPage } from '../pages/favorites/favorites';
 import { AuthPage } from '../pages/auth/auth';
+import { MagasinsService } from '../services/magasins.service';
 
 
 @Component({
@@ -28,7 +29,8 @@ export class MyApp {
   constructor(platform: Platform,
     statusBar: StatusBar,
     splashScreen: SplashScreen,
-    private menuCtrl: MenuController) {
+    private menuCtrl: MenuController,
+    private magasinsService: MagasinsService) {
     platform.ready().then(() => {
 
       let config = {
@@ -61,7 +63,8 @@ export class MyApp {
 
   onNavigate(page: any, data?: {}) {
     this.content.setRoot(page, data ? data : null);
-    this.menuCtrl.close();
+    this.menuCtrl.close();    
+    this.magasinsService.retrieveDataC(); 
   }
 
   onDisconnect() {
