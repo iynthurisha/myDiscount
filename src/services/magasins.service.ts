@@ -16,13 +16,13 @@ export class MagasinsService {
     magasinsList: Magasin[] = [
         {
             name: 'Adidas',
-            logo: '../../assets/imgs/logoAdidas.png',
+            logo: '../../assets/imgs/LogoAdidas.png',
             website: 'https://Adidas.com'
 
         },
         {
             name: 'Bershka',
-            logo: '../../assets/imgs/LogoBershka.png',
+            logo: '../../assets/imgs/logoBershka.png',
             website: 'http://www.bershka.fr'
 
         },
