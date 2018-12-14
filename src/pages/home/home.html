@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="teal">
     <ion-buttons start>
       <button ion-button icon-only (click)="onToggleMenu()">
         <ion-icon name="menu"></ion-icon>
@@ -13,22 +13,22 @@
 
 <ion-content padding>
 
+  <div text-center>
+    <ion-icon name="logo"></ion-icon>
+    <ion-img width="160" height="85" src="../../assets/imgs/myDiscountlogo.png" alt="myDiscount"></ion-img>
+  </div>
 
-  <ion-icon name="logo"></ion-icon>
-  <ion-img src="../../assets/imgs/myDiscountlogo.png" alt="myDiscount"></ion-img>
+  <div text-center>
+    <p>
+      Bienvenue sur notre Application <b>myDiscount</b>. <br>
+      Ici vous allez forcément trouver votre bonheur !! <br>
+      Nous vous proposons des centaines de codes promotionnels sur des dizaines de magasins ! <br>
+      <b> Bon shopping !! </b>
+    </p>
 
-  <p>
-    Bienvenue sur notre Application <b>myDiscount</b>. <br>
-    Ici vous allez forcément trouver votre bonheur
-    de faire shopping !! <br>
-    Nous vous proposons des centaines de codes promotionnels sur des dixzaines de magasins ! <br>
-    <b> Bon shopping !! </b>
-  </p>
-
-  <button ion-button icon-start color="dark" (click)="onGoToMagasins()">
-    <ion-icon name="pricetags"></ion-icon>
-    Consulter les codes promos !
-  </button>
-
-
+    <button ion-button icon-start color="teal" (click)="onGoToMagasins()">
+      <ion-icon name="pricetags"></ion-icon>
+      Consulter les codes promos !
+    </button>
+  </div>
 </ion-content>

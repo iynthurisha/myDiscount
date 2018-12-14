@@ -16,22 +16,60 @@ export class MagasinsService {
     magasinsList: Magasin[] = [
         {
             name: 'Adidas',
-            logo: '../../assets/imgs/Adidaslogo.png',
+            logo: '../../assets/imgs/logoAdidas.png',
             website: 'https://Adidas.com'
 
         },
-
         {
             name: 'Bershka',
-            logo: '../../assets/imgs/Bershkalogo.png',
+            logo: '../../assets/imgs/LogoBershka.png',
             website: 'http://www.bershka.fr'
 
         },
-
         {
             name: 'Boss',
-            logo: '../../assets/imgs/Bosslogo.png',
+            logo: '../../assets/imgs/logoBoss.jpg',
             website: 'http://www.hugoboss.com/fr'
+        },
+        {
+            name: 'Chanel',
+            logo: '../../assets/imgs/logoChanel.png',
+            website: 'http://www.Chanel.com/fr'
+        },
+        {
+            name: 'Dior',
+            logo: '../../assets/imgs/logoDior.png',
+            website: 'https://www.dior.com'
+        },
+        {
+            name: 'Gucci',
+            logo: '../../assets/imgs/logoGucci.png',
+            website: 'https://www.gucci.com'
+        },
+        {
+            name: 'Guess',
+            logo: '../../assets/imgs/logoGuess.jpg',
+            website: 'https://www.guess.eu'
+        },
+        {
+            name: 'Nike',
+            logo: '../../assets/imgs/logoNike.jpg',
+            website: 'http://www.nike.com/fr'
+        },
+        {
+            name: 'Prada',
+            logo: '../../assets/imgs/logoPrada.jpg',
+            website: 'https://www.prada.com'
+        },
+        {
+            name: 'Versace',
+            logo: '../../assets/imgs/logoVersace.png',
+            website: 'https://www.versace.com'
+        },
+        {
+            name: 'Yves Saint Laurent',
+            logo: '../../assets/imgs/logoYSL.png',
+            website: 'https://www.ysl.com'
         }
     ];
 
@@ -44,28 +82,20 @@ export class MagasinsService {
             promotions: [
                 {
                     codepromo: 'ADCODE5',
-                    image: '../../assets/imgs/Adidas1.png',
-                    description: 'reduc 5% pour un achat de 10€',
-                    isOnFav: true
-                },
-
-
-                {
-                    codepromo: 'ADCODE10',
-                    image: '../../assets/imgs/Adidas1.png',
-                    description: 'reduc 10% pour un achat de 10€',
+                    image: '../../assets/imgs/adidas5.png',
+                    description: '5% de reduction pour un achat de 10€',
                     isOnFav: false
                 },
                 {
-                    codepromo: 'ADCODEfree',
-                    image: '../../assets/imgs/Adidas2.png',
-                    description: 'reduc free pour un achat de 10€',
-                    isOnFav: true
+                    codepromo: 'ADCODE10',
+                    image: '../../assets/imgs/adidas10.png',
+                    description: '10% de reduction pour un achat de 10€',
+                    isOnFav: false
                 },
                 {
-                    codepromo: 'ADCODE1+1=3',
-                    image: '../../assets/imgs/Adidas3.png',
-                    description: 'reduc 3 pour deux achat',
+                    codepromo: 'ADCODE15',
+                    image: '../../assets/imgs/Adidas15.png',
+                    description: '15% de reduction pour un achat de 20€',
                     isOnFav: false
                 }
             ]
@@ -75,20 +105,20 @@ export class MagasinsService {
             promotions: [
                 {
                     codepromo: 'BSKCODE5',
-                    image: '../../assets/imgs/BSKlogo.png',
-                    description: 'reduc 5% pour un achat de 10€',
-                    isOnFav: true
-                },
-                {
-                    codepromo: 'BSKCODE10',
-                    image: '../../assets/imgs/BSKlogo.png',
-                    description: 'reduc 10% pour un achat de 10€',
+                    image: '../../assets/imgs/bershka5.png',
+                    description: '5% de reduction pour un achat de 10€',
                     isOnFav: false
                 },
                 {
-                    codepromo: 'BSKCODEFREE',
-                    image: '../../assets/imgs/BSKlogo.png',
-                    description: 'reduc FREE pour un achat de 10€',
+                    codepromo: 'BSKCODE10',
+                    image: '../../assets/imgs/bershka10.png',
+                    description: '10% de reduction pour un achat de 10€',
+                    isOnFav: false
+                },
+                {
+                    codepromo: 'BSKCODE15',
+                    image: '../../assets/imgs/Bershka15.png',
+                    description: '15% de reduction pour un achat de 20€',
                     isOnFav: false
                 }
             ]
@@ -98,24 +128,208 @@ export class MagasinsService {
             promotions: [
                 {
                     codepromo: 'BOSSCODE5',
-                    image: '../../assets/imgs/BOSSlogo.png',
-                    description: 'reduc 5% pour un achat de 10€',
+                    image: '../../assets/imgs/Boss5.png',
+                    description: '5% de reduction pour un achat de 10€',
                     isOnFav: false
                 },
                 {
                     codepromo: 'BOSSCODE10',
-                    image: '../../assets/imgs/BOSSlogo.png',
-                    description: 'reduc 10% pour un achat de 10€',
+                    image: '../../assets/imgs/Boss10.png',
+                    description: '10% de reduction pour un achat de 10€',
                     isOnFav: false
                 },
                 {
-                    codepromo: 'BOSSCODEFREE',
-                    image: '../../assets/imgs/BOSSlogo.png',
-                    description: 'reduc FREE pour un achat de 10€',
+                    codepromo: 'BOSSCODE15',
+                    image: '../../assets/imgs/Boss15.png',
+                    description: '15% de reduction pour un achat de 20€',
                     isOnFav: false
                 }
             ]
-        }
+        },
+        {
+            colname: 'Chanel',
+            promotions: [
+                {
+                    codepromo: 'CHANELCODE5',
+                    image: '../../assets/imgs/Chanel5.png',
+                    description: '5% de reduction pour un achat de 10€',
+                    isOnFav: false
+                },
+                {
+                    codepromo: 'CHANELCODE10',
+                    image: '../../assets/imgs/Chanel10.png',
+                    description: '10% de reduction pour un achat de 10€',
+                    isOnFav: false
+                },
+                {
+                    codepromo: 'CHANELCODE15',
+                    image: '../../assets/imgs/Chanel15.png',
+                    description: '15% de reduction pour un achat de 20€',
+                    isOnFav: false
+                }
+            ]
+        },
+        {
+            colname: 'Dior',
+            promotions: [
+                {
+                    codepromo: 'DIORCODE5',
+                    image: '../../assets/imgs/Dior5.png',
+                    description: '5% de reduction pour un achat de 10€',
+                    isOnFav: false
+                },
+                {
+                    codepromo: 'DIORCODE10',
+                    image: '../../assets/imgs/Dior10.png',
+                    description: '10% de reduction pour un achat de 10€',
+                    isOnFav: false
+                },
+                {
+                    codepromo: 'DIORCODE15',
+                    image: '../../assets/imgs/Dior15.png',
+                    description: '15% de reduction pour un achat de 20€',
+                    isOnFav: false
+                }
+            ]
+        },
+        {
+            colname: 'Gucci',
+            promotions: [
+                {
+                    codepromo: 'GUCCICODE5',
+                    image: '../../assets/imgs/Gucci5.png',
+                    description: '5% de reduction pour un achat de 10€',
+                    isOnFav: false
+                },
+                {
+                    codepromo: 'GUCCICODE10',
+                    image: '../../assets/imgs/Gucci10.png',
+                    description: '10% de reduction pour un achat de 10€',
+                    isOnFav: false
+                },
+                {
+                    codepromo: 'GUCCICODE15',
+                    image: '../../assets/imgs/Gucci15.png',
+                    description: '15% de reduction pour un achat de 20€',
+                    isOnFav: false
+                }
+            ]
+        },
+        {
+            colname: 'Guess',
+            promotions: [
+                {
+                    codepromo: 'GUESSCODE5',
+                    image: '../../assets/imgs/Guess5.png',
+                    description: '5% de reduction pour un achat de 10€',
+                    isOnFav: false
+                },
+                {
+                    codepromo: 'GUESSCODE10',
+                    image: '../../assets/imgs/Guess10.png',
+                    description: '10% de reduction pour un achat de 10€',
+                    isOnFav: false
+                },
+                {
+                    codepromo: 'GUESSCODE15',
+                    image: '../../assets/imgs/Guess15.png',
+                    description: '15% de reduction pour un achat de 20€',
+                    isOnFav: false
+                }
+            ]
+        },
+        {
+            colname: 'NIKE',
+            promotions: [
+                {
+                    codepromo: 'NIKECODE5',
+                    image: '../../assets/imgs/Nike5.png',
+                    description: '5% de reduction pour un achat de 10€',
+                    isOnFav: false
+                },
+                {
+                    codepromo: 'NIKECODE10',
+                    image: '../../assets/imgs/Nike10.png',
+                    description: '10% de reduction pour un achat de 10€',
+                    isOnFav: false
+                },
+                {
+                    codepromo: 'NIKECODE15',
+                    image: '../../assets/imgs/Nike15.png',
+                    description: '15% de reduction pour un achat de 20€',
+                    isOnFav: false
+                }
+            ]
+        },
+        {
+            colname: 'PRADA',
+            promotions: [
+                {
+                    codepromo: 'PRADACODE5',
+                    image: '../../assets/imgs/Prada5.png',
+                    description: '5% de reduction pour un achat de 10€',
+                    isOnFav: false
+                },
+                {
+                    codepromo: 'PRADACODE10',
+                    image: '../../assets/imgs/Prada10.png',
+                    description: '10% de reduction pour un achat de 10€',
+                    isOnFav: false
+                },
+                {
+                    codepromo: 'PRADACODE15',
+                    image: '../../assets/imgs/Prada15.png',
+                    description: '15% de reduction pour un achat de 20€',
+                    isOnFav: false
+                }
+            ]
+        },
+        {
+            colname: 'VERSACE',
+            promotions: [
+                {
+                    codepromo: 'VERSACECODE5',
+                    image: '../../assets/imgs/Versace5.png',
+                    description: '5% de reduction pour un achat de 10€',
+                    isOnFav: false
+                },
+                {
+                    codepromo: 'VERSACECODE10',
+                    image: '../../assets/imgs/Versace10.png',
+                    description: '10% de reduction pour un achat de 10€',
+                    isOnFav: false
+                },
+                {
+                    codepromo: 'VERSACECODE15',
+                    image: '../../assets/imgs/Versace15.png',
+                    description: '15% de reduction pour un achat de 20€',
+                    isOnFav: false
+                }
+            ]
+        },
+        {
+            colname: 'Yves Saint Lauren',
+            promotions: [
+                {
+                    codepromo: 'YSLCODE5',
+                    image: '../../assets/imgs/YSL5.png',
+                    description: '5% de reduction pour un achat de 10€',
+                    isOnFav: false
+                },
+                {
+                    codepromo: 'YSLCODE10',
+                    image: '../../assets/imgs/YSL10.png',
+                    description: '10% de reduction pour un achat de 10€',
+                    isOnFav: false
+                },
+                {
+                    codepromo: 'YSLCODE15',
+                    image: '../../assets/imgs/YSL15.png',
+                    description: '15% de reduction pour un achat de 20€',
+                    isOnFav: false
+                }
+            ]
+        },
     ];
 
     ////////////////////////////////
