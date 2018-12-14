@@ -94,7 +94,7 @@ export class MagasinsService {
                 },
                 {
                     codepromo: 'ADCODE15',
-                    image: '../../assets/imgs/Adidas15.jpg',
+                    image: '../../assets/imgs/adidas15.jpg',
                     description: '15% de reduction pour un achat de 75€',
                     isOnFav: false
                 }
