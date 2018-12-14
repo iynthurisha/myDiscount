@@ -23,12 +23,16 @@ Utiliser le fichier sous format apk qui est fourni, déplacer-le sur votre smart
 
 ESIEA 4ème année:
 
-* **VARATHARAJA Iynthurisha**
+* **VARATHARAJAH Iynthurisha**
 * **MAGIT Jordan**
 
-## CADRE
+## Cadre
 
 Projet mobile de 4ème année
+
+## Professeur
+
+**Mr FERAH Sami**
 
 
 
