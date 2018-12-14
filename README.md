@@ -4,7 +4,7 @@ MyDiscount est une application qui propose des codes promotionnels de diverse gr
 
 ## Déploiement
 
-Utiliser le fichier sous format apk [a relative link](/apk/app-debug.apk) qui est fourni, déplacer-le sur votre smartphone et double-clic dessus pour le telecharger et le lancer.
+Utiliser le fichier sous format apk " [a relative link](/apk/app-debug.apk) " qui est fourni, déplacer-le sur votre smartphone et double-clic dessus pour le telecharger et le lancer.
 
 ## Utilisation
 
